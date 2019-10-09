@@ -87,7 +87,7 @@ class _ScanQRState extends State<ScanQR> {
                             padding: EdgeInsets.only(top: 100.0),
                             child:Text(student.message,style: TextStyle(fontSize: 26.0),)),
                 Padding(
-                  padding: const EdgeInsets.only(top: 20.0),
+                  padding: const EdgeInsets.only(top: 100.0),
                   child: RaisedButton(
                     child: Text("Scan"),
                     onPressed: _scanQRCode,
