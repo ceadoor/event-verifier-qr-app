@@ -23,23 +23,23 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Hacktoberfest Event"),),
-      body: Layout(child: _pages.elementAt(_selectedIndex),),
-      bottomNavigationBar: BottomNavigationBar(
-        items: <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon:Icon(Icons.scanner),
-            title: Text('Scan QR')
-          ),
-          BottomNavigationBarItem(
-            icon:Icon(Icons.list),
-            title: Text('List Students')
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        unselectedItemColor: Colors.black,
-        selectedItemColor: Colors.black,
-        onTap: _onItemTapped,
-      ),
+      body: Layout(child: ScanQR(),),
+      // bottomNavigationBar: BottomNavigationBar(
+      //   items: <BottomNavigationBarItem>[
+      //     BottomNavigationBarItem(
+      //       icon:Icon(Icons.scanner),
+      //       title: Text('Scan QR')
+      //     ),
+      //     BottomNavigationBarItem(
+      //       icon:Icon(Icons.list),
+      //       title: Text('List Students')
+      //     ),
+      //   ],
+      //   currentIndex: _selectedIndex,
+      //   unselectedItemColor: Colors.black,
+      //   selectedItemColor: Colors.black,
+      //   onTap: _onItemTapped,
+      // ),
     );
   }
 }
