@@ -10,8 +10,8 @@ class Student {
   factory Student.fromJson(Map<String, dynamic> json) {
     return Student(
       status: json['status'],
-      message: json['promoCode'],
-      user: json['brand'],
+      message: json['message'],
+      user: json['user'],
     );
   }
 }
